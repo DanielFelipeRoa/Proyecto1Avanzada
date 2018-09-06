@@ -72,7 +72,27 @@ public class Modelo {
         getVentanaInicial().getBtnSiguiente().setEnabled(false);
         getVentanaInicial().setVisible(true);
     }
-    
+    public void CategoriaGastos(){
+        int i = getVentanaGastos().getCBTipoGastos().getSelectedIndex();
+        if (i==0){
+            getMiSistema().setHGastos(getMiSistema().getHGastos()+Float.parseFloat(getVentanaGastos().getTxtGastos().getText()));
+        } else if (i==1){
+            getMiSistema().setHGastos(getMiSistema().getHGastos()+Float.parseFloat(getVentanaGastos().getTxtGastos().getText()));
+        } else if (i==2){
+            getMiSistema().setHGastos(getMiSistema().getHGastos()+Float.parseFloat(getVentanaGastos().getTxtGastos().getText()));
+        } else if (i==3){
+            getMiSistema().setHGastos(getMiSistema().getHGastos()+Float.parseFloat(getVentanaGastos().getTxtGastos().getText()));
+        } else if (i==4){
+            getMiSistema().setHGastos(getMiSistema().getHGastos()+Float.parseFloat(getVentanaGastos().getTxtGastos().getText()));
+        } else if (i==5){
+            getMiSistema().setHGastos(getMiSistema().getHGastos()+Float.parseFloat(getVentanaGastos().getTxtGastos().getText()));
+        } else if (i==6){
+            getMiSistema().setHGastos(getMiSistema().getHGastos()+Float.parseFloat(getVentanaGastos().getTxtGastos().getText()));
+        } else if (i==7){
+            getMiSistema().setHGastos(getMiSistema().getHGastos()+Float.parseFloat(getVentanaGastos().getTxtGastos().getText()));
+        }
+        
+    }
     public void saldoInicial(){
         
         boolean error = false;
@@ -138,6 +158,7 @@ public class Modelo {
         getVentanaPrincipal().setTitle("Ventana Principal");
         getVentanaPrincipal().setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         getVentanaPrincipal().getLblSaldoTotal().setText(String.valueOf(getMiSistema().getSaldo()));
+        getVentanaPrincipal().getLblMuestraGastos().setText(String.valueOf(getMiSistema().getHGastos()));
         getVentanaPrincipal().setSize(500, 400);
         getVentanaPrincipal().setVisible(true);
         getVentanaInicial().setVisible(false);

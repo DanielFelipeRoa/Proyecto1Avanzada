@@ -14,11 +14,13 @@ public class Transacciones {
     private float gastos;
     private float ingresos;
     private float saldo;
+    private float HGastos;
 
     public Transacciones() {
         gastos = 0;
         ingresos = 0;
         saldo = 0;
+        HGastos=0;
     }
     
     public void añadirGasto(float gasto){
@@ -53,6 +55,12 @@ public class Transacciones {
 
     public void setSaldo(float saldo) {
         this.saldo = saldo;
+    }
+    public float getHGastos() {
+        return HGastos;
+    }
+    public void setHGastos(float HGastos) {
+        this.HGastos = HGastos;
     }
     
     

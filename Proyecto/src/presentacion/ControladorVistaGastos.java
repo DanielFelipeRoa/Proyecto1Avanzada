@@ -26,7 +26,7 @@ public class ControladorVistaGastos implements ActionListener{
         Object Boton = e.getSource();
         if (Boton == ventanaGastos.getbtnSaldoGastos()){
             m.saldoGastos();
-            
+            m.CategoriaGastos();
         } else if(Boton==ventanaGastos.getbtnAtras()){
             m.iniciarVistaPrincipal();
         }
