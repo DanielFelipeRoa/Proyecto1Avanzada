@@ -5,6 +5,7 @@
  */
 package presentacion;
 
+import static javax.swing.JFrame.EXIT_ON_CLOSE;
 import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
 import logica.Transacciones;
 
@@ -21,6 +22,7 @@ public class Modelo {
     private VistaIngresos ventanaIngresos;
     private VistaHistorial ventanaHistorial;
     float saldoInicial=0;
+    
     public Transacciones getMiSistema() {
         if(miSistema == null){
             miSistema = new Transacciones();
@@ -65,6 +67,7 @@ public class Modelo {
     
     public void iniciar() {
         getVentanaInicial().setTitle("Mi Billetera");
+//        getVentanaInicial().setDefaultCloseOperation(EXIT_ON_CLOSE);
         getVentanaInicial().setSize(500, 400);
         getVentanaInicial().getBtnSiguiente().setEnabled(false);
         getVentanaInicial().setVisible(true);
