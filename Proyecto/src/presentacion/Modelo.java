@@ -121,7 +121,7 @@ public class Modelo {
             getVentanaIngresos().getLblResultado().setText("Existe un error en la introducción del gasto");
         }
         else{
-            getVentanaIngresos().getLblResultado().setText("Gasto añadido exitosamente");
+            getVentanaIngresos().getLblResultado().setText("Ingreso añadido exitosamente");
         }
     }
     public void reiniciar(){
